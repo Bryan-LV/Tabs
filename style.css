@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* panel tab */
+.panelTabs{
+    display:flex;
+    flex-flow:row nowrap;
+    color:white;
+    font-size:2rem;
+}
+
+.panelTab {
+    width: 100px;
+    height: 50px;
+    background-color: #282822;
+    margin:5px;
+    cursor: pointer;
+}
+
+
+/* panel */
+.panels {
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+.panel {
+    width: 90vw;
+    margin: auto;
+    height: 400px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: black;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.showPanel{
+    z-index: 2000;
+}
+
+/* service listing */
+
+.serviceListings ul li{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width:90%;
+    margin: 0px auto 20px;
+}
+
+.serviceTitle{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.service{
+    white-space: nowrap;
+}
+
+.serviceListings{
+    font-style: oblique;
+}
+
+.priceListing{
+    white-space: nowrap;
+    color:hsl(41, 62%, 55%);
+}
+
+@media only screen and (min-width:550px){
+    .serviceListings ul li{
+        flex-flow: row nowrap;
+    }
+    .border{
+        border-top:2px dotted black;
+        width:100%;
+    }
+}
+@media only screen and (min-width:800px){
+    .panel{
+        font-size: 1.8rem;
+    }
+}
+
+/* .service::after{
+    border-top: 2px dotted #010101;
+    content: "";
+    display: block;
+} */
+
+
+
+
+
+
